@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './widgets/todo_list.dart';
+import './widgets/new_todo_list.dart';
 
 void main() => runApp(MyApp());
 
@@ -29,15 +30,16 @@ class MyHomePage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Container(
+              NewTodo(),
+              /* Container(
                 width: double.infinity,
                 child: Card(
                   child: Text('Welcome to homepage'),
                   elevation: 5,
                 ),
                 color: Colors.blue,
-              ),
-              TodoList()
+              ), */
+              TodoList(),
             ],
           ),
         ),
